@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universidad de Dagupan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="icon" href="images/UDD-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href='https://fonts.googleapis.com/css?family=Droid Serif' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="scroll-up-button js-scroll-up-button"><i class="fa-solid fa-angle-up"></i></div>
+  <!-- CHATBOT -->
+  <div class="chatbot-toggler js-chatbot-toggler"><i class="fa-solid fa-robot"></i></div>
+  <div class="chatbot-container js-chatbot-container">
+    <div class="chatbox-header">
+      <div>
+        <h2 style="font-size: 20px;">UdDroid</h2>
+      </div>
+      <div>
+        <i class="fa-solid fa-robot"></i>
+      </div>
+    </div>
+    <div class="chatbox-convo-container js-chatbox-convo-container">
+      <div class="droid-online-container">
+        <i class="fa-solid fa-robot"></i>
+        <p>Say Hi to UdDroid!</p>
+      </div>
+    </div>
+    <div class="chatbox-input-container">
+      <input maxlength="30" class="js-user-input" placeholder="Write a message..." type="text">
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <span style="color: rgb(39, 107, 242); font-size: 27px; cursor: pointer;" class="material-symbols-outlined js-send-button">
+          send
+        </span>
+      </div>
+    </div>
+  </div>
+  <!-- CHATBOT -->
+  <header>
+    <a class="udd-logo-navbar-link" href="index.html">
+      <div class="udd-logo-navbar-container">
+        <img class="udd-logo-navbar" src="images/UDD-logo.png">
+        <p class="udd-logo-text-navbar">Universidad de Dagupan</p>
+    </div></a>
+    <nav>
+      <ul>
+        <a href="index.html"><li class="nav-programs">Home</li></a>
+        <a href=""><li class="nav-programs">Program Offerings</li></a>
+        <a href="public/news.html"><li class="nav-news">News</li></a>
+        <div class="about-us-container">
+          <div class="js-about-us" style="position: relative;">
+            <li class="nav-about">About Us<i class="fa-solid fa-angle-down header-arrow-down"></i></li>
+          </div>
+          <div class="about-us-dropdown js-about-us-dropdown">
+            <a href="public/history.html"><li style="border-top-left-radius: 7px; border-top-right-radius: 7px;">UdD History</li></a>
+            <li class="js-pvmo-scroll">PVMO</li>
+            <li>Management</li>
+            <li class="js-partners-scroll" style="border-bottom-left-radius: 7px; border-bottom-right-radius: 7px;">Partners</li>
+            
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+  <div style="width: 100%; height: 100px; background-color: #000589; position: absolute;"></div>
+
+  <div class="slider-container js-slider-container">
+    <div class="slider-filter">
+      <div>
+        <img src="images/UDD-logo.png">
+        <h1>HOME OF <span style="color: rgb(28, 100, 242);">TOPNOTCHERS</span></h1>
+        <p>Discover Your Potential, Shape Your Future.</p>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div class="slides">
+        <img class="slide" src="images/meeting.jpg">
+        <img class="slide" src="images/escalator-profs.jpg">
+        <img class="slide" src="images/udd-campus.jpg">
+        <img class="slide" src="images/crim-intrams-2024.jpg">
+      </div>
+    </div>
+  
+    <button class="prev js-prev" onclick="prevSlide()">&#10094</button>
+    <button class="next js-next" onclick="nextSlide()">&#10095</button>
+  </div>
+
+  <!-- CONTENT 1 -->
+  <div class="content">
+    <h1>Featured News <span style="color: rgb(28, 100, 242);">&</span> Events</h1>
+    <div class="news-container">
+      <div class="news-box">
+        <div class="news-box-filter">
+          <h2>UdD's New Escalator is <br>now Open!</h2>
+          <hr class="news-line">
+          <a href="news-pages/news-escalator.html"><button class="read-more-button">READ MORE</button></a>
+        </div>
+        <img src="images/voltaire-escalator.jpg">
+      </div>
+      <div class="news-box">
+        <div class="news-box-filter">
+          <h2>University Forges Global Alliances!</h2>
+          <hr class="news-line">
+          <a href="news-pages/news-global-alliance.html"><button class="read-more-button">READ MORE</button></a>
+        </div>
+        <img src="images/int-partnership.jpg">
+      </div>
+      <div class="news-box">
+        <div class="news-box-filter">
+          <h2>UdD Crowns its New Queen!</h2>
+          <hr class="news-line">
+          <a href="news-pages/news-binibining-udd.html"><button class="read-more-button">READ MORE</button></a>
+        </div>
+        <img src="images/binibining-udd.jpg">
+      </div>
+    </div>
+  </div>
+  <!-- CONTENT 1 -->
+
+  <!-- CONTENT 2 -->
+  <div class="content-2">
+    <h1>WHY CHOOSE <span style="color: rgb(28, 100, 242);">U</span>NIVERSIDAD <span style="color: rgb(28, 100, 242);">d</span>e <span style="color: rgb(28, 100, 242);">D</span>AGUPAN</h1>
+
+    <div class="why-choose-message">
+      <p>At Universidad de Dagupan, excellence isn't just a goal—it's a tradition. With a storied history dating back to 1984, our university has consistently set the standard for academic distinction and holistic development. Our esteemed faculty members are more than just teachers; they're mentors dedicated to guiding you on your journey to success.</p>
+      <br>
+      <p>What sets Universidad de Dagupan apart is our unwavering focus on real-world engagement. From internships to community service projects, we provide hands-on experiences that prepare you for the challenges of the modern world. Here, learning isn't confined to textbooks—it's a dynamic, immersive experience that equips you with the skills and knowledge you need to thrive in any environment.</p>
+    </div>
+  </div>
+  <!-- CONTENT 2 -->
+
+  <!-- CONTENT 3 -->
+  <div class="content-3">
+      <img src="images/topnotchers-temporary.jpg">
+      <div class="topnotchers-title-container">
+        <h1>40 YEARS OF <span style="color: rgb(28, 100, 242);">ACADEMIC EXCELLENCE</span></h1>
+      </div>
+  </div>
+  <!-- CONTENT 3 -->
+  
+  <!-- CONTENT 4 -->
+  <div class="content-4">
+    <img src="images/kuwago-cafe.jpg">
+    <div class="kuwago-content">
+      <h1>KUWAGO <span style="color: #582f0e;">CAFE</span></h1>
+      <p><span style="font-weight: 700; font-family: 'Lato';">Kuwago Cafe</span>, nestled in the heart of our university campus, is a beloved sanctuary for students seeking a cozy retreat from their hectic schedules. Adorned with rustic wooden interiors and student artwork, the cafe exudes a warm and inviting ambiance, perfect for both study sessions and social gatherings. Students flock here for the artisanal coffee, especially the signature "Owl’s Brew Latte," alongside an array of delicious pastries and healthy snacks. Its eco-friendly practices and community-centric events, like open mic nights and art exhibits, make Kuwago Cafe a hub of creativity and camaraderie, embodying the vibrant spirit of campus life.</p>
+    </div>
+  </div>
+  <!-- CONTENT 4 -->
+
+  <!-- CONTENT 5 -->
+  <div class="content-5">
+    <div class="philosophy-box">
+      <h1><span style="color: rgb(28, 100, 242);">P</span>hilosophy</h1>
+      <p>The institution believes that through education, man's God-given gifts are discovered and developed for his personal fulfillment and community uplift.</p>
+    </div>
+    <div class="vision-box">
+      <h1><span style="color: rgb(28, 100, 242);">V</span>ision</h1>
+      <p>It envisions to create a community responsive to the challenges of the changing world.</p>
+    </div>
+    <div class="mission-box">
+      <h1><span style="color: rgb(28, 100, 242);">M</span>ission</h1>
+      <p>It is tasked to prepare the individuals with the best that education can offer in a manner that is consistent with the needs of society.</p>
+    </div>
+    <div class="objectives-box">
+      <h1><span style="color: rgb(28, 100, 242);">O</span>bjectives</h1>
+      
+        <li>To inculcate critical thinking</li>
+        <li>To provide competent human resources in various fields</li>
+        <li>To promote discipline, justice and equality</li>
+        <li>To improve man's quality of life through research and community services</li>
+      
+    </div>
+  </div>
+  <!-- CONTENT 5 -->
+
+  <div class="maps-directions">
+    <h1 style="text-align: center;">MAPS <span style="color: rgb(28, 100, 242);">&</span> DIRECTIONS</h1>
+  </div>
+
+  <iframe style="width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.2846444862453!2d120.33826437550475!3d16.05071228462607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339167fd0100bfa3%3A0x392d5ed47cf7639e!2sUniversidad%20de%20Dagupan!5e0!3m2!1sen!2sph!4v1717825879563!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div style="width: 100%; height: 20px; box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.80);
+"></div>
+
+  <div class="partners-container">
+    <h1><span style="color: rgb(28, 100, 242);">I</span>NTERNATIONAL <span style="color: rgb(28, 100, 242);">P</span>ARTNERS</h1>
+    <div class="prtnrs-row">
+      <img src="images/intl-1.png">
+      <img src="images/intl-2.png">
+      <img src="images/intl-3.png">
+      <img src="images/intl-4.png">
+      <img src="images/intl-5.png">
+      <img src="images/intl-6.png">
+      <img src="images/intl-7.png">
+      <img src="images/intl-8.png">
+      <img src="images/intl-9.png">
+    </div>
+
+    <h1 style="margin-top: 20px;"><span style="color: rgb(28, 100, 242);">L</span>OCAL <span style="color: rgb(28, 100, 242);">P</span>ARTNERS</h1>
+    <div class="prtnrs-row">
+      <img src="images/lcl-1.png">
+      <img src="images/lcl-2.png">
+      <img src="images/lcl-3.png">
+      <img src="images/lcl-4.png">
+      <img src="images/lcl-5.png">
+      <img src="images/lcl-6.png">
+    </div>
+  </div>
+  
+  <footer>
+    <div>
+      <h2>UNIVERSIDAD de<br> DAGUPAN</h2>
+      <i style="font-size: 14px; margin-top: 10px;" class="fa-regular fa-copyright"><span style="color: white; margin-left: 7px; font-family: 'Poppins';">2024 UdD. All rights reserved.</span></i>
+    </div>
+    <div>
+      <h3 class="contacts-links-title" style="margin-bottom: 15px;">Contacts</h3>
+      <div style="margin-bottom: 21px;" class="contacts-links-box">
+        <i style="font-size: 25px;" class="fa-solid fa-location-dot"></i>
+        <span>Arellano St, Dagupan City, Philippines</span>
+      </div>
+      <div style="margin-bottom: 23px;" class="contacts-links-box">
+        <i style="font-size: 22px;" class="fa-solid fa-phone"></i>
+        <span>(075) 522 2405</span>
+      </div>
+      <div class="contacts-links-box">
+        <i style="font-size: 22px;" class="fa-solid fa-envelope"></i>
+        <span>info@cdd.edu.ph</span>
+      </div>
+    </div>
+
+    <div>
+      <h3 class="contacts-links-title">Links</h3>
+      <div style="display: flex; column-gap: 35px;">
+        <div>
+          <a class="links-footer" href="https://www.facebook.com/uddinfoboard">
+            <div class="contacts-links-box">
+              <i class="fa-brands fa-square-facebook"></i>
+              <span class="links">Facebook</span>
+            </div>
+          </a>
+          <a class="links-footer" href="https://www.instagram.com/colegio_de_dagupan/">
+            <div class="contacts-links-box">
+              <i class="fa-brands fa-square-instagram"></i>
+              <span class="links">Instagram</span>
+            </div>
+          </a>
+          <a class="links-footer" href="https://www.youtube.com/@colegiodedag/videos">
+            <div class="contacts-links-box">
+              <i class="fa-brands fa-square-youtube"></i>
+              <span class="links">Youtube</span>
+            </div>
+          </a>
+        </div>
+        <div>
+          <a class="links-footer" href="https://udd.steps.com.ph/login">
+            <div class="contacts-links-box">
+              <img class="step-icon" src="images/step-icon.png">
+              <span class="links">STEP S LMS</span>
+            </div>
+          </a>
+          <a class="links-footer" href="http://mycdd.cdd.edu.ph/PARENTS_STUDENTS/">
+            <div style="margin-top: 17px;" class="contacts-links-box">
+              <i style="font-size: 23px;" class="fa-solid fa-school"></i>
+              <span class="links">MyCdD Portal</span>
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
